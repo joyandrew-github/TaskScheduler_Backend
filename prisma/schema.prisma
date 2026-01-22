@@ -1,0 +1,36 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator jsModels {
+  provider = "prisma-generator-js-models"
+  output   = "../models"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int     @id @default(autoincrement())
+  email     String  @unique
+  name      String?
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Task {
+  id          Int     @id @default(autoincrement())
+  title       String
+  description String?
+  completed   Boolean @default(false)
+  userId      Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("tasks")
+}
