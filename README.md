@@ -239,11 +239,13 @@ Opens Prisma Studio for visual database inspection.
 
 ## 📄 License
 
-ISC
+© 2026 JoyAndrew. All rights reserved.
+This project is not licensed for redistribution or commercial use without permission.
+
 
 ## 👤 Author
 
-Your Name
+Joyandrew S
 
 ---
 
