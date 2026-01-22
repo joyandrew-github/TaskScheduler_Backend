@@ -6,39 +6,36 @@ Professional Node.js Express API server for Task Scheduler application.
 
 ```
 server/
-├── config/              # Configuration files
-│   ├── database.js      # Prisma database setup
-│   ├── logger.js        # Winston logger configuration
-│   └── index.js         # Centralized config management
-├── controller/          # Route controllers/handlers
-│   └── exampleController.js
-├── middleware/          # Express middleware
-│   ├── authentication.js # JWT verification
-│   ├── errorHandler.js  # Global error handling
-│   ├── rateLimiter.js   # Rate limiting
-│   ├── requestLogger.js # Request logging
-│   └── validation.js    # Input validation
-├── routes/              # API routes
-│   └── exampleRoutes.js
-├── service/             # Business logic layer
-│   └── exampleService.js
-├── utils/               # Utility functions
-│   ├── constants.js     # App constants
-│   ├── helpers.js       # Helper functions
-│   └── validators.js    # Validation utilities
-├── prisma/              # Prisma ORM
-│   └── schema.prisma    # Database schema
-├── logs/                # Application logs
-├── .env.example         # Environment variables template
-├── .env.development     # Development environment
-├── .gitignore          # Git ignore file
-├── .prettierrc          # Prettier config
-├── .prettierignore      # Prettier ignore
-├── commitlint.config.js # Commit lint rules
-├── eslint.config.mjs    # ESLint rules
-├── nodemon.json         # Nodemon configuration
-├── package.json         # Dependencies & scripts
-└── server.js            # Application entry point
+├── config/                  # Configuration files
+│   ├── config.js           # Environment configuration
+│   ├── database.js         # Prisma database setup
+│   └── rateLimiter.js      # Rate limiting configuration
+├── controller/              # Route controllers/handlers (ready for implementation)
+├── middleware/              # Express middleware (ready for implementation)
+├── routes/                  # API routes (ready for implementation)
+├── service/                 # Business logic layer (ready for implementation)
+├── utils/                   # Utility functions
+│   └── constants.js        # App constants
+├── prisma/                  # Prisma ORM
+│   └── schema.prisma       # Database schema
+├── logs/                    # Application logs directory
+├── .vscode/                 # VS Code settings
+│   └── settings.json       # Editor configuration
+├── .husky/                  # Git hooks
+│   ├── commit-msg          # Commitlint hook
+│   └── pre-commit          # Pre-commit checks
+├── .env.example             # Environment variables template
+├── .env.development         # Development environment variables
+├── .env.production          # Production environment variables
+├── .gitignore              # Git ignore file
+├── .prettierrc              # Prettier configuration
+├── .prettierignore          # Prettier ignore rules
+├── commitlint.config.js     # Conventional commits rules
+├── eslint.config.mjs        # ESLint rules
+├── nodemon.json             # Nodemon development configuration
+├── package.json             # Dependencies & scripts
+├── README.md                # Project documentation
+└── server.js                # Application entry point
 ```
 
 ## 🚀 Getting Started
